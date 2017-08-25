@@ -1,0 +1,40 @@
+<config>
+
+	<connection>
+		<host>localhost</host>
+		<user>test</user>
+		<password>test</password>
+	</connection>
+
+	<general>
+		<rep_courant>oui</rep_courant><!-- Mettre à oui si vous souhaitez définir le répertoire où se situe le programme en tant que répertoire
+		où se trouve les fichier à envoyer, mettre à non pour mettre un répertoire de votre choix -->
+		<custom_rep>C:\Jessy\File Transmitter</custom_rep><!-- donnez le répertoire de votre choix si rep_courant est à non -->
+		<extension>.txt</extension><!-- l'extension des fichiers à envoyer, ex: .txt -->
+	</general>
+
+	<action>
+		<backup>True</backup> <!-- True ou False, ne pas oublier la majuscule -->
+		<repbackup>C:\Jessy\File Transmitter\Backup</repbackup><!-- Le répertoire où vous souhaitez mettre la backup -->
+	</action>
+
+	<logs>
+		<nom>filetransmitter.log</nom>
+		<!-- nom du fichier log, n'oubliez pas de mettre l'extension .log -->
+		<replog>C:\Jessy\File Transmitter\Logs</replog>
+		<!-- le répertoire où sera stocké le fichier log, laissez vide pour qu'il sois créé dans le répertoire courant -->
+		<tag>ftp</tag>
+		<!-- Nom symbolique à attribuer au log -->
+		<full_log>non</full_log>
+		<!-- Si vous voulez que le log enregistre tout ce qu'il se passe ou uniquement les erreur.
+		Pour qu'il enregistre tout ce qu'il se passe, mettre à oui. -->
+		<listmail>
+			<email>aa@aa.fr</email><!-- Permet d'envoyer un mail lorsqu'un élément atteint le niveau error du log.-->
+			<email></email>
+			<!-- Vous pouvez définir plusieurs adresse mail afin d'envoyer le message à plusieurs personnes.
+			Pour ce faire, ajoutez simplement une nouvelle balise <email>mail@mail.com</email>. Vous pouvez en ajouter autant que 
+			vous le souhaitez. -->
+		</listmail>
+	</logs>
+
+</config>
