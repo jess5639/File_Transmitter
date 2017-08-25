@@ -11,6 +11,6 @@ C'est un batch qui permet d'envoyer des fichiers d'un point A à un point B via 
 
 Le batch archive (de mémoire) les transferts OK dans un dossier nommé OK (coïncidence?) et les transferts KO dans un dossier KO.
 
-Il scrute le répertoire configuré dans le fichier file_transmitter.xml, et dès qu'il trouve un fichier avec l'extension donnée il l'envoi.
+Il scrute le répertoire configuré dans le fichier file_transmitter.xml, et dès qu'il trouve un fichier avec l'extension donnée il l'envoi. Il envoi un mail si un transfert se passe mal. Une bdd sqlite sert à historiser le nombre de fichiers envoyé par heure.
 
 Beaucoup de courage à ceux qui voudraient s'en servir.
